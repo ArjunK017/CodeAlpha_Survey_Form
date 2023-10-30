@@ -1,0 +1,276 @@
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 12pt;
+    font-family: 'Spartan';
+    color: #2A293E;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* Replace 'Montserrat' with the font you chose */
+    font-size: 36px;
+    /* You can adjust the font size as needed */
+    color: #FF5733;
+    /* Change the font color as desired */
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #55c4bc;
+    /* Form background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* Form box shadow */
+}
+
+form label {
+    font-family: 'Your-Preferred-Font', sans-serif;
+    /* Replace 'Your-Preferred-Font' with your desired font */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* You can adjust the font weight */
+    color: #062d4d;
+    /* Change the font color as desired */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="contact"],
+input[type="district"],
+input[type="address"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Add this line to include padding and border in the width calculation */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.gender {
+    margin-top: 10px;
+}
+
+.gender label {
+    display: block;
+}
+
+.gender-options {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.gender-options input[type="radio"],
+.gender-options label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    /* Allow vertical resizing of the text area */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Add this line to include padding and border in the width calculation */
+    height: 100px;
+    /* Adjust the height as per your preference */
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+    /* This centers the button horizontally */
+    background-color: #4CAF50;
+    color: rgb(249, 249, 249);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Adjust the top margin to create space between the last field and the button */
+}
+
+.center-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Add these CSS styles to your existing stylesheet */
+
+.button-container {
+    text-align: center;
+}
+
+.center-button {
+    padding: 12px 35px;
+    background: #FEC195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #FEC195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.center-button .star-1,
+.center-button .star-2,
+.center-button .star-3,
+.center-button .star-4,
+.center-button .star-5,
+.center-button .star-6 {
+    position: absolute;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.center-button:hover {
+    background: transparent;
+    color: #FEC195;
+    box-shadow: 0 0 25px #fec1958c;
+}
+
+.center-button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.center-button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.center-button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.center-button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.center-button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.center-button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+.fil0 {
+    fill: #FFFDEF
+}
